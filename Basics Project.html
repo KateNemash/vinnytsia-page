@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌸Vinnytsia💒</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(137, 210, 253) 0%,
+          rgb(255, 241, 188) 90%
+        );
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h1 {
+        color: #346473;
+        font-size: 38px;
+      }
+      h2 {
+        color: #38817a;
+        border: 1px solid #f7f39a;
+        font-size: 26px;
+        font-weight: 100;
+        font-style: italic;
+        padding: 15px;
+      }
+      img {
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+      p {
+        font-size: 18px;
+      }
+      button {
+        display: block;
+        color: #346473;
+        background: #f7f39a;
+        font-size: 20px;
+        padding: 10px;
+        margin: 30px auto;
+        border: 1px solid #346473;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px #38817a;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        color: #f7f39a;
+        background: #346473;
+        cursor: pointer;
+      }
+      footer {
+        font-size: 12px;
+      }
+      .contents {
+        text-align: center;
+        line-height: 1.5;
+      }
+      .links {
+        color: #38817a;
+        text-decoration: none;
+      }
+      .links:hover {
+        text-decoration: underline;
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contents">
+      <h1>Welcome to Vinnytsia!</h1>
+      <h2>A city that knows how to surprise and inspire new ideas!</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/746/original/dji_0053-1120x580.jpg?1657217376"
+        alt="Vinnytsia"
+      />
+      <p>
+        Today Vinnytsia is a modern city located in the center of Ukraine on the
+        banks of the Pivdennyi Buh River. Repeatedly recognized as the most
+        comfortable city in Ukraine, Vinnytsia has a developed infrastructure
+        and is very convenient for living.
+        <br />
+        <br />
+        However, it lives not only for comfort of its inhabitants. Vinnytsia is
+        endowed with a special historical and artistic atmosphere. From the
+        walls of the 16th century to modern hubs, coworking spaces and shopping
+        malls. From street art to galleries and theaters. From bizarre and
+        friendly bronze sculptures to large-scale cultural and artistic
+        projects. As the capital of Podillia region, Vinnytsia preserves the
+        cultural heritage of many generations, as a modern city it takes an
+        active part in the artistic life of the country and Europe.
+        <br />
+        <br />
+        Vinnytsia is a city that leaves tourists wanting to return here more
+        than once to feel the friendliness, comfort and atmosphere of happiness
+        again.
+      </p>
+      <span>
+        <strong>
+          <a href="https://vinnytsia.city/en/" target="_blank" class="links">
+            <em> Visit the City of ideas </em>
+          </a>
+          and check out our
+          <a
+            href="https://www.facebook.com/visitvinnytsiavn"
+            target="_blank"
+            class="links"
+          >
+            <em>Facebook</em>
+          </a>
+        </strong>
+      </span>
+      <button>Subscribe to news💒</button>
+      <hr />
+      <footer>Coded by Kate Nemash</footer>
+    </div>
+    <script>
+      function subscribe() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email adress?");
+        let visit = prompt(
+          "Great, " + name + "! Have you ever been to Ukraine?"
+        );
+        visit = visit.toLowerCase();
+        if (visit === "yes") {
+          alert("🥰 Lucky you! Now check your inbox to plan your next visit💌");
+        } else {
+          alert(
+            "I really envy you! You will discover the beauty of Ukraine for the first time🥰 Now check your inbox to plan your visit💌"
+          );
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", subscribe);
+    </script>
+  </body>
+</html>
